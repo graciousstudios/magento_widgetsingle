@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<widgets>    
+	<widgetsingle_widgetsingle type="widgetsingle/widgetsingle" translate="name description" module="widgetsingle">
+        <name>Catalog Single Product</name>
+        <description type="desc">Shows a single product</description>
+        <parameters>
+		    <id_path translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Product</label>
+                <type>label</type>
+                <helper_block>
+                    <type>adminhtml/catalog_product_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Product...</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>10</sort_order>
+            </id_path>
+			<template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <value>trendmarke/widgetsingle/single_product.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>trendmarke/widgetsingle/single_product.phtml</value>
+                        <label>Default template</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
+    </widgetsingle_widgetsingle>
+</widgets>
